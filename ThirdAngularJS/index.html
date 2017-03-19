@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="firstmodule">
+
+<head>
+  <script data-require="angular.js@1.6.0" data-semver="1.6.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body ng-controller="MainController">
+  
+  <div> {{error}}</div>
+  <div>
+    FirstName : {{ user.name}}
+  </div>
+  <div>
+    LastName : {{ user.location}}
+  </div>
+  <div>
+    <img ng-src="{{user.avatar_url}}">
+  </div>
+</body>
+
+</html>
